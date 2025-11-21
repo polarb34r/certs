@@ -1,414 +1,15 @@
-# certs
-Azure Certification Paths (Markdown-Ready)
-📘 Overview
+---
+title: Azure Training Paths
+description: Complete Azure training & certification roadmap for multi-role teams.
+---
 
-This document outlines three certification paths for Azure professionals:
+# 🟦 Azure Training & Certification Paths  
+A complete training plan for teams with multiple roles (DevOps, AI/ML, Security, Data, Architecture, and Networking).  
+Each role includes phases, timelines, certifications, and milestones.
 
-Path A: Infrastructure / Azure Administrator
+---
 
-Path B: Developer / DevOps Engineer
-
-Path C: Security Engineer / Cybersecurity Architect
-
-Each includes a visual roadmap and explanations that fit naturally into GitHub README files.
-
-🛠️ Path A — Infrastructure / Azure Administrator
-┌====================┐
-│   AZ-900           │
-│   Azure Basics     │
-└=========┬==========┘
-          │
-          ▼
-┌====================┐
-│   AZ-104           │
-│   Azure Admin      │
-│   Core for Infra   │
-└=========┬==========┘
-          │
-    ┌=====┴=======┬===============┐
-    │             │               │
-    ▼             ▼               ▼
-┌================┐ ┌================┐ ┌=================┐
-│   AZ-500       │ │   AZ-700       │ │   DP-203        │
-│ Security Eng.  │ │ Network Eng.   │ │ Data Eng. Opt.  │
-└=======┬========┘ └========┬=======┘ └========┬========┘
-        │                    │                  │
-        └===========┬========┴===========┬======┘
-                    ▼                    ▼
-           ┌======================┐  ┌==================┐
-           │   AZ-305             │  │   Specialty (Opt) │
-           │ Solutions Architect  │  │ IoT / Storage     │
-           └======================┘  └==================┘
-
-Summary
-
-Best suited for Cloud Administrators, Infra Engineers, and Cloud Architects.
-
-Focuses on VMs, networking, security, storage, and governance.
-
-Ends at AZ-305, which elevates you to solution design and architecture.
-
-💻 Path B — Developer / DevOps Engineer
-┌====================┐
-│   (Optional)        │
-│   AZ-900            │
-│   Fundamentals      │
-└=========┬==========┘
-          │
-          ▼
-┌====================┐
-│   AZ-204           │
-│   Developer Assoc. │
-│   Build apps/APIs  │
-└=========┬==========┘
-          │
-          ▼
-┌========================┐
-│   AZ-400               │
-│   DevOps Expert        │
-│   CI/CD · IaC · SRE    │
-└=========┬==============┘
-          │
-          ▼
-┌========================┐
-│  (Optional) AZ-305     │
-│  Architect Solutions    │
-└========================┘
-
-Summary
-
-Ideal for Cloud Developers, DevOps Engineers, SREs, and Platform Engineers.
-
-AZ-204 builds cloud application development skills.
-
-AZ-400 adds CI/CD, GitHub Actions, automation, pipelines, IaC.
-
-🔐 Path C — Security / Identity / Cybersecurity
-┌====================┐
-│   AZ-900           │
-│   Fundamentals     │
-└=========┬==========┘
-          │
-          ▼
-┌========================┐
-│   AZ-500               │
-│   Security Engineer    │
-│   Zero Trust · IAM     │
-└=========┬==============┘
-          │
-    ┌=====┴=============┬=============┐
-    │                   │             │
-    ▼                   ▼             ▼
-┌===============┐ ┌==============┐ ┌===============┐
-│   SC-300       │ │   SC-200      │ │   SC-100       │
-│ Identity Eng.  │ │ SecOps        │ │ Cyber Architect │
-└===============┘ └==============┘ └===============┘
-
-Summary
-
-Best for Security Engineers, SOC Analysts, IAM Specialists, or Cyber Architects.
-
-AZ-500 covers core Azure security controls and tooling.
-
-SC-300 and SC-200 complement by specializing in identity and operations.
-
-SC-100 caps the track by pushing you into architecture-level cybersecurity design.
-
-🗓️ Recommended 12-Month Roadmap (Azure Engineer)
-
-This roadmap works for someone targeting a solid cloud engineering role.
-
-Months 1–2
-
-Study AZ-900
-
-Learn cloud basics, governance, pricing, workloads
-
-Start using Azure Portal + CLI in a sandbox environment
-
-Months 3–5
-
-Study AZ-104
-
-Hands-on labs: VMs, networking, storage, RBAC, monitoring
-
-Begin ARM/Bicep basics
-
-Months 6–8
-
-Choose your specialization:
-
-Option A — Security
-
-Study AZ-500
-
-Option B — DevOps
-
-Study AZ-204 → Begin CI/CD foundations
-
-Option C — Networking
-
-Study AZ-700
-
-Months 9–12
-
-Aim for AZ-305 (Architect)
-
-Build a full sample architecture:
-
-Hub-spoke network
-
-VM + App Service + AKS mix
-
-Key Vault integration
-
-Logging + monitoring
-
-✔️ Bonus: Quick Copy/Paste Index for Your Repo
-- /docs
-  - azure-paths.md
-  - infra-path.md
-  - devops-path.md
-  - security-path.md
-- README.md (link to the 3 paths)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Azure Certification Paths
-
-A clean and GitHub Pages–friendly guide for Azure Engineers
-
-🌐 Overview
-
-This document describes three major Microsoft Azure certification paths:
-
-Infrastructure / Administrator
-
-Developer / DevOps Engineer
-
-Security / Cybersecurity
-
-Each section contains:
-
-A readable diagram
-
-A short explanation
-
-A suggested progression
-
-🛰️ Path A — Infrastructure / Azure Administrator
-Diagram
-┌────────────────────┐
-│   AZ-900           │
-│   Azure Basics     │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────┐
-│   AZ-104           │
-│   Azure Admin      │
-│   Core for Infra   │
-└─────────┬──────────┘
-          │
-    ┌─────┴───────────┬──────────────┬──────────────┐
-    │                 │              │              │
-    ▼                 ▼              ▼              ▼
-┌────────────────┐ ┌────────────────┐ ┌────────────────┐ ┌─────────────────┐
-│   AZ-500       │ │   AZ-700       │ │   DP-203       │ │   Specialty Opt │
-│ Security Eng.  │ │ Network Eng.   │ │ Data Eng.      │ │ IoT/Storage     │
-└───────┬────────┘ └────────┬───────┘ └────────┬──────┘ └────────┬────────┘
-        │                    │                  │                 │
-        └───────────┬────────┴───────────┬──────┴────────────────┘
-                    ▼                    ▼
-           ┌──────────────────────┐  ┌──────────────────┐
-           │   AZ-305             │  │   Architecture    │
-           │ Solutions Architect  │  │   Specialties     │
-           └──────────────────────┘  └──────────────────┘
-
-Summary
-
-Perfect for: Cloud Administrators, Infra Engineers, System Engineers, Architects
-
-You’ll learn:
-
-Virtual machines
-
-Networking
-
-Identity & RBAC
-
-Storage & backup
-
-Governance
-
-Monitoring
-
-Ends with AZ-305 for full architecture design skills.
-
-💻 Path B — Developer / DevOps Engineer
-Diagram
-┌────────────────────┐
-│   (Optional)       │
-│   AZ-900           │
-│   Fundamentals     │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────┐
-│   AZ-204           │
-│   Developer Assoc. │
-│   Apps, APIs       │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────────┐
-│   AZ-400               │
-│   DevOps Expert        │
-│   CI/CD, IaC, SRE      │
-└─────────┬──────────────┘
-          │
-          ▼
-┌────────────────────────┐
-│   (Optional) AZ-305    │
-│   Solutions Architect   │
-└────────────────────────┘
-
-Summary
-
-Perfect for: Developers, DevOps Engineers, SREs, Platform Engineers
-
-You’ll learn:
-
-Cloud-native development
-
-API development
-
-Serverless
-
-GitHub Actions & CI/CD
-
-Infrastructure as Code
-
-Cloud automation
-
-🔐 Path C — Security / Identity / Cybersecurity
-Diagram
-┌────────────────────┐
-│   AZ-900           │
-│   Fundamentals     │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────────┐
-│   AZ-500               │
-│   Security Engineer    │
-│   Zero Trust, IAM      │
-└─────────┬──────────────┘
-          │
-    ┌─────┴───────────────┬─────────────┬──────────────┐
-    │                       │             │              │
-    ▼                       ▼             ▼              ▼
-┌───────────────┐     ┌──────────────┐ ┌───────────────┐
-│   SC-300       │     │   SC-200      │ │   SC-100       │
-│ Identity Eng.  │     │ SecOps        │ │ Cyber Architect │
-└───────────────┘     └──────────────┘ └───────────────┘
-
-Summary
-
-Perfect for: Security Engineers, IAM Engineers, SOC Analysts, Cyber Architects
-
-You’ll learn:
-
-Threat protection
-
-Zero Trust
-
-Identity governance
-
-Defender XDR
-
-Security operations and incident response
-
-📅 12-Month Azure Engineer Roadmap
-Months 1–2 — Foundations
-
-Study AZ-900
-
-Learn governance, resource hierarchy, subscriptions, RBAC
-
-Set up a free Azure subscription
-
-Months 3–5 — Core Skills
-
-Study AZ-104
-
-Practice VM, networking, storage, monitoring
-
-Start learning Bicep or Terraform
-
-Months 6–8 — Specialization
-
-Choose one:
-
-Security → AZ-500
-
-DevOps → AZ-204
-
-Networking → AZ-700
-
-Data → DP-203
-
-Months 9–12 — Architecture
-
-Study AZ-305
-
-Build a real architecture diagram
-
-Include Key Vault, VNet design, monitoring, compute, identity
-
-📁 Suggested Repository Structure
-docs/
-  azure-certification-paths.md
-  azure-infrastructure.md
-  azure-devops.md
-  azure-security.md
-
-assets/
-  diagrams/
-    infra-path.png
-    devops-path.png
-    security-path.png
-
-README.md
-
-
-| Role                | Duration     | Core Certifications                 |
-| ------------------- | ------------ | ----------------------------------- |
-| DevOps Engineer     | **12 weeks** | AZ-900 → AZ-104 → AZ-204 → AZ-400   |
-| AI/ML Engineer      | **14 weeks** | AI-900 → DP-900 → AI-102 → DP-100   |
-| Data Engineer       | **12 weeks** | DP-900 → DP-203 → DP-300            |
-| Security Engineer   | **10 weeks** | SC-900 → AZ-500 → SC-300/SC-200     |
-| Solutions Architect | **12 weeks** | AZ-900 → AZ-104 → AZ-305            |
-| Network Engineer    | **10 weeks** | AZ-900 → AZ-700 → AZ-500 (optional) |
-
-
-# Azure Training Plan — Master Table (All Roles)
+# 📚 Master Table — All Roles
 
 | Role | Phase | Duration | Weekly Hours | Certifications | Milestones |
 |------|--------|-----------|--------------|----------------|-------------|
@@ -433,4 +34,67 @@ README.md
 | Network Engineer | Network Engineer Associate | Weeks 3–6 | 5–6 hrs | AZ-700 | Deploy hybrid network (VPN/ER) |
 | Network Engineer | Security Enhancement (Optional) | Weeks 7–10 | 5–6 hrs | AZ-500 | Configure NSG, Firewall, WAF |
 
+---
 
+# 📘 Role Summaries
+
+## 🛠️ DevOps Engineer Path  
+- Focus: automation, CI/CD, IaC, pipelines, monitoring  
+- Core exams: **AZ-900 → AZ-104 → AZ-204 (opt) → AZ-400**
+
+## 🤖 AI / ML Engineer Path  
+- Focus: cognitive services, machine learning, MLOps  
+- Core exams: **AI-900 → DP-900 → AI-102 → DP-100**
+
+## 🗄️ Data Engineer Path  
+- Focus: data pipelines, storage, databases, analytics  
+- Core exams: **DP-900 → DP-203 → DP-300**
+
+## 🔐 Security Engineer Path  
+- Focus: identity, SOC operations, cloud security posture  
+- Core exams: **SC-900 → AZ-500 → (SC-300 or SC-200)**
+
+## 🧱 Solutions Architect Path  
+- Focus: high-level cloud design, governance, global solutions  
+- Core exams: **AZ-900 → AZ-104 → AZ-305**
+
+## 🌐 Network Engineer Path  
+- Focus: connectivity, hybrid networks, firewalls, routing  
+- Core exams: **AZ-900 → AZ-700 → AZ-500 (optional)**
+
+---
+
+# 📆 Recommended Study Time
+
+| Weekly Hours | Expected Pace |
+|--------------|----------------|
+| **5–6 hrs/week** | Standard pace (recommended) |
+| 8–10 hrs/week | Accelerated path |
+| 2–3 hrs/week | Slow track (extend timelines ~2×) |
+
+---
+
+# 🎯 How to Use This in Your Team
+
+1. Assign each engineer a target role  
+2. Use the “Phase” durations as sprints  
+3. Track exam progress as milestones  
+4. Repeat quarterly skill assessments  
+5. Add projects to reinforce every certification learned
+
+---
+
+# 📝 License
+
+This training plan is free to use and modify within your team or organization.
+
+---
+
+If you'd like, I can also generate:
+
+✅ A **multi-page GitHub Pages site** (with navigation)  
+✅ A version with **diagrams / flowcharts**  
+✅ A **TXT-only version**  
+✅ A **role selection wizard** (interactive Markdown)
+
+Just tell me what you want next!
